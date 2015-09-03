@@ -1,2 +1,0 @@
-- Depois de criar o projeto maven, criar os 'packages'
-
