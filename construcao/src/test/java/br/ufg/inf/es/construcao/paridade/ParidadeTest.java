@@ -21,34 +21,28 @@ public class ParidadeTest {
     public ParidadeTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     /**
-     * Test of verifica method, of class Paridade.
+     * Teste para verificar paridade de número
      */
+    
     @org.junit.Test
-    public void testVerifica() {
-        System.out.println("verifica");
+    public void testVerificaParidade() {
         int numero = 0;
         boolean expResult = true;
         boolean result = Paridade.verifica(numero);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    }
+    
+    /**
+     * Teste para verificar paridade de número
+     */
+    
+    @org.junit.Test
+    public void testVerificaNaoParidade() {
+        int numero = 1;
+        boolean expResult = false;
+        boolean result = Paridade.verifica(numero);
+        assertEquals(expResult, result);
     }
     
 }
