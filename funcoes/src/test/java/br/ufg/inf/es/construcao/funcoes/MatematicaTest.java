@@ -16,6 +16,15 @@ public class MatematicaTest {
     }
 
     /**
+     * Teste para soma de um número negativo.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testSomaNaturaisCasoNegativo() {
+        int n = -5;
+        Matematica.somaNaturais(n);
+    }
+
+    /**
      * Teste para soma de um número com caso base (n = 1).
      */
     @Test
