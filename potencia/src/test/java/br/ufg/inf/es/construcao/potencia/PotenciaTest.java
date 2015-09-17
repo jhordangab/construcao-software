@@ -49,5 +49,4 @@ public class PotenciaTest {
         int result = Potencia.potencia(x, y);
         assertEquals(expResult, result);
     }
-
 }
