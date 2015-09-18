@@ -1,19 +1,31 @@
 package br.ufg.inf.es.construcao.crivoeratostenes;
 
-/**
- *
- * @author Jhordan
- */
 public class CrivoEratostenes {
 
     /**
-     * Retorna números primos
+     * Retorna números primos de determinado array
      *
+     * @param array
+     * @param quantidade
+     * @return array com os números primos
      */
-    public static int[] crivoEratostenes(int array[], int quantidade) {
+    public static int[] crivoEratostenes(int[] array, int quantidade) {
 
-        if (quantidade < 1) {
-            throw new IllegalArgumentException("'quantidade' não pode ser menor que 1");
+        if (quantidade < 2) {
+            throw new IllegalArgumentException("'quantidade' não pode ser menor"
+                    + " que 2");
+        }
+
+        if (array.length != quantidade) {
+            throw new IllegalArgumentException("O tamanho do array é diferente "
+                    + "da quantidade informada");
+        }
+
+        for (int x = 2; x < quantidade; x++) {
+            if (array[x] != 0) {
+                throw new IllegalArgumentException("Valores a partir da segunda"
+                        + " posição do array não podem ser diferentes de zero");
+            }
         }
 
         int i = 2;
@@ -22,10 +34,9 @@ public class CrivoEratostenes {
                 int c = i + i;
                 while (c <= quantidade) {
                     array[c] = 1;
-                    c++;
+                    c = c + i;
                 }
             }
-            System.out.println(array[i]);
             i++;
         }
         return array;
