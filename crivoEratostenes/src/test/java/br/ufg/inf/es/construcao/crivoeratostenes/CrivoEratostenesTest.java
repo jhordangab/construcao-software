@@ -37,13 +37,16 @@ public class CrivoEratostenesTest {
     @Test
     public void testCrivo() {
         int quantidade = 10;
-        int[] array = new int[quantidade];
-        for (int i = 0; i < quantidade; i++) {
-            array[i] = (quantidade == 0 || quantidade == 1) ? 1 : 0;
-        }
-        int[] expResult = {1, 1, 1, 0, 1, 0, 1, 0, 0, 0};
-        int[] result = CrivoEratostenes.crivoEratostenes(array, quantidade);
-        assertArrayEquals(expResult, result);
+        int[] array = new int[quantidade + 1];
+        CrivoEratostenes.crivoEratostenes(array, quantidade);
+        assertEquals(1, array[9]);
+        assertEquals(1, array[8]);
+        assertEquals(0, array[7]);
+        assertEquals(1, array[6]);
+        assertEquals(0, array[5]);
+        assertEquals(1, array[4]);
+        assertEquals(0, array[3]);
+
     }
 
 }

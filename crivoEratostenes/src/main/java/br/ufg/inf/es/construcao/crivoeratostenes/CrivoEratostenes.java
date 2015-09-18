@@ -9,22 +9,22 @@ public class CrivoEratostenes {
      * @param quantidade
      * @return array com os números primos
      */
-    public static int[] crivoEratostenes(int[] array, int quantidade) {
+    public static void crivoEratostenes(int[] array, int quantidade) {
 
         if (quantidade < 2) {
             throw new IllegalArgumentException("'quantidade' não pode ser menor"
-                    + " que 2");
+                    + " que 2.");
         }
 
-        if (array.length != quantidade) {
-            throw new IllegalArgumentException("O tamanho do array é diferente "
-                    + "da quantidade informada");
+        if (array.length - 1 != quantidade) {
+            throw new IllegalArgumentException("A quantidade é diferente do "
+                    + "tamanho do vetor setado.");
         }
 
         for (int x = 2; x < quantidade; x++) {
             if (array[x] != 0) {
                 throw new IllegalArgumentException("Valores a partir da segunda"
-                        + " posição do array não podem ser diferentes de zero");
+                        + " posição do array não podem ser diferentes de zero.");
             }
         }
 
@@ -39,6 +39,5 @@ public class CrivoEratostenes {
             }
             i++;
         }
-        return array;
     }
 }
