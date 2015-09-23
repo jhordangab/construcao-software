@@ -15,7 +15,7 @@ public class Amigos {
         int somaDivisoresX = somaDivisores(numeroX);
         int somaDivisoresY = somaDivisores(numeroY);
 
-        return (somaDivisoresX == numeroY && somaDivisoresY == numeroX) ? true : false;
+        return (somaDivisoresX == numeroY && somaDivisoresY == numeroX);
     }
 
     public static int somaDivisores(int numero) {
