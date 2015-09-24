@@ -24,7 +24,7 @@ public class Mdc2Test {
 
     /**
      *
-     * Testes da função Mdc2 perfeito para entrada com inválidos ou diferentes
+     * Testes da função Mdc2 para entrada com inválidos ou diferentes
      * do esperado
      *
      * @expected Erro
