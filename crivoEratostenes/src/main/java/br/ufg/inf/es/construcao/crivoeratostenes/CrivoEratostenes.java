@@ -3,11 +3,11 @@ package br.ufg.inf.es.construcao.crivoeratostenes;
 public class CrivoEratostenes {
 
     /**
-     * Retorna números primos de determinado array
+     * Método para manipulação de array, deixando nele apenas números 'primos'.
      *
-     * @param array
-     * @param quantidade
-     * @return array com os números primos
+     * @param array - array para verificação do crivo
+     * @param quantidade - tamanho do array
+     *
      */
     public static void crivoEratostenes(int[] array, int quantidade) {
 

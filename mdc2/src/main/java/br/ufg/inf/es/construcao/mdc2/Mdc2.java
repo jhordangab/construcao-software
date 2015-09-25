@@ -7,6 +7,14 @@ package br.ufg.inf.es.construcao.mdc2;
  */
 public class Mdc2 {
 
+    /**
+     * Método para retornar o mdc entre dois números
+     *
+     * @param numeroX int
+     * @param numeroY int
+     *
+     * @return int - mdc encontrado dos dois números recebidos como parâmetros
+     */
     public static int mdc2(int numeroX, int numeroY) {
 
         if (numeroX < numeroY) {
