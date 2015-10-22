@@ -1,4 +1,3 @@
-
 package br.com.inf.ufg.jhordan.somanaturais;
 
 /**
