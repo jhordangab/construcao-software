@@ -27,7 +27,7 @@ public class SomaNaturais {
         int s = 1;
         
         while(i <= numero){
-            s++;
+            s += i;
             i++;
         }
         return s;

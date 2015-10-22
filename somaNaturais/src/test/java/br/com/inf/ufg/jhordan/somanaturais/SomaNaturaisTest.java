@@ -16,9 +16,10 @@ public class SomaNaturaisTest {
      */
     @org.junit.Test
     public void testSomaNaturais() {
-        assertEquals(2, SomaNaturais.somaNaturais(2));
-        assertEquals(3, SomaNaturais.somaNaturais(3));
-        assertEquals(4, SomaNaturais.somaNaturais(4));
+        assertEquals(3, SomaNaturais.somaNaturais(2));
+        assertEquals(6, SomaNaturais.somaNaturais(3));
+        assertEquals(10, SomaNaturais.somaNaturais(4));
+        assertEquals(15, SomaNaturais.somaNaturais(5));
     }
     
     /**
