@@ -30,7 +30,7 @@ public class Propriedade153 {
         int j = (numero - (100*i))/10;
         int k = numero % 10;
         
-        return (Math.pow(i, 3) + Math.pow(j, 3) + Math.pow(k, 3) == numero);
+        return ((i*i*i) + (j*j*j) + (k*k*k) == numero);
         
     }
     
